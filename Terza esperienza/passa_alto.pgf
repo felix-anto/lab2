@@ -1,0 +1,14 @@
+\begin{tikzpicture}[scale=1.00, transform shape, /tikz/circuitikz/bipoles/length=1.50cm, american currents, american voltages, voltage dir=RP]
+  \coordinate (1) at (0,4);
+  \coordinate (0) at (0,0);
+  \coordinate (2) at (6,4);
+  \coordinate (3) at (6,0);
+  \draw (1) to [vco, l_=V, n=BL1] (0);
+  \draw (1) to [R, l_=$R$, n=R] (2);
+  \draw (2) to [C, l_=$C$, n=C] (3);
+  \draw (3) to (0);
+  \draw (1) node[circ] {};
+  \draw (0) node[circ] {};
+  \draw (2) node[circ] {};
+  \draw (3) node[circ] {};
+\end{tikzpicture}
